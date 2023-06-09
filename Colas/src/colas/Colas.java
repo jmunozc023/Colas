@@ -14,7 +14,16 @@ public class Colas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cola c =new Cola();
+        c.insertar(8);
+        c.insertar(9);
+        c.insertar(7);
+        
+        System.out.println("El valor es: "+c.eliminar());
+        c.insertar(10);
+        System.out.println("El valor es: "+c.inicio.dato);
+        System.out.println("El valor es: "+c.fin.dato);
+        c.mostrarCola();
     }
     
 }
